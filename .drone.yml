@@ -24,7 +24,6 @@ steps:
         from_secret: password
       snyk:
         from_secret: snyk
-      fail_on_issues: false
 
   - name: publish
     image: plugins/docker

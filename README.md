@@ -2,10 +2,5 @@
 
 Super exciting cards information !
 
-DONT ADD ANY SECRETS like this
+DONT ADD ANY SECRETS
 
-```yaml
-aws_access
-_key: AKIAIOSFODNN7
-EXAMPLE
-```
