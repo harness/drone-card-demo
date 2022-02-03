@@ -16,7 +16,7 @@ steps:
     image: plugins/drone-snyk
     privileged: true
     settings:
-      image: drone_playground/hello-world
+      image: plugins/hello-world
       debug: true
       username:
         from_secret: username
