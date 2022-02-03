@@ -16,7 +16,7 @@ steps:
     image: plugins/drone-snyk
     privileged: true
     settings:
-      image: plugins/hello-world
+      image: mcr.microsoft.com/dotnet/sdk:5.0
       debug: true
       username:
         from_secret: username
@@ -24,6 +24,7 @@ steps:
         from_secret: password
       snyk:
         from_secret: snyk
+      fail_on_issues: false
 
   - name: publish
     image: plugins/docker
@@ -34,4 +35,7 @@ steps:
         from_secret: username
       password:
         from_secret: password
-
+    when:
+    status:
+    - success
+    - failure
