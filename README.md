@@ -2,6 +2,5 @@
 
 Super exciting cards information !
 
-DONT ADD ANY SECRETS
-
+password = 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
   
