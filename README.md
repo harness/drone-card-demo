@@ -2,4 +2,4 @@
 
 Super exciting cards information !
 
-DO NOT ADD PASSWORDS  
+Password = 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 
