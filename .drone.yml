@@ -6,7 +6,7 @@ steps:
     
   - name: git-leak
     image: plugins/gitleaks
-
+ 
   - name: scan
     image: plugins/drone-snyk
     privileged: true
