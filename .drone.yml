@@ -3,11 +3,6 @@ name: default
 type: docker
 
 steps:
-  - name: test script
-    image: curlimages/curl
-    commands: 
-    - export PLUGIN_CITY=BFS
-    - sh script.sh
     
   - name: git-leak
     image: plugins/gitleaks
