@@ -3,20 +3,15 @@ name: default
 type: docker
 
 steps:
-  - name: test script
-    image: curlimages/curl
-    commands: 
-    - export PLUGIN_CITY=BFS
-    - sh script.sh
     
   - name: git-leak
     image: plugins/gitleaks
-
+ 
   - name: scan
     image: plugins/drone-snyk
     privileged: true
     settings:
-      image: mcr.microsoft.com/dotnet/sdk:5.0
+      image: mysql
       debug: true
       username:
         from_secret: username
