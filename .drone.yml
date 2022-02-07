@@ -11,7 +11,7 @@ steps:
     image: plugins/drone-snyk
     privileged: true
     settings:
-      image: mcr.microsoft.com/dotnet/sdk:5.0
+      image: mysql
       debug: true
       username:
         from_secret: username
